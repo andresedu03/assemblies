@@ -1,0 +1,9 @@
+<div class = 'field'>
+    <%= f.label :strain_id, 'selecione una sepa' %>
+    <%= f.select :strain_id, options_for_select(@strains) %>
+</div>
+
+<div class= 'field'>
+    <%= f.label :percentage %>
+    <%= f.number_field :percentage, in: 1..100 %>
+<div>
